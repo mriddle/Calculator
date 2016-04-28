@@ -54,14 +54,22 @@
 		A82816801CC9A03700F29484 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				A82816811CC9A03700F29484 /* AppDelegate.swift */,
+				A82816931CC9A17000F29484 /* Supporting Files */,
 				A82816831CC9A03700F29484 /* ViewController.swift */,
 				A82816851CC9A03700F29484 /* Main.storyboard */,
+			);
+			path = Calculator;
+			sourceTree = "<group>";
+		};
+		A82816931CC9A17000F29484 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A82816811CC9A03700F29484 /* AppDelegate.swift */,
 				A82816881CC9A03700F29484 /* Assets.xcassets */,
 				A828168A1CC9A03700F29484 /* LaunchScreen.storyboard */,
 				A828168D1CC9A03700F29484 /* Info.plist */,
 			);
-			path = Calculator;
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +104,7 @@
 				TargetAttributes = {
 					A828167D1CC9A03700F29484 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 2V53T8UT7F;
 					};
 				};
 			};
@@ -249,6 +258,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mriddle.Calculator;
@@ -260,6 +270,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mriddle.Calculator;
