@@ -42,5 +42,11 @@ class ViewController: UIViewController {
     displayValue = brain.result
   }
   
+  @IBAction func insertFloatingPoint(sender: UIButton) {
+    if !display.text!.containsString(".") {
+      touchDigit(sender)
+    }
+  }
+  
 }
 
