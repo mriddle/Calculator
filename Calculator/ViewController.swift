@@ -4,9 +4,18 @@ class ViewController: UIViewController {
   
   
   @IBOutlet private weak var display: UILabel!
+  @IBOutlet var calculatorButtons: [UIButton]!
   
   private var userIsInTheMiddleOfTyping = false
-  
+
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    for calculatorButton in calculatorButtons {
+      calculatorButton.layer.borderWidth = 0.25
+      calculatorButton.layer.borderColor = UIColor.blackColor().CGColor
+    }
+  }
+
   @IBAction private func touchDigit(sender: UIButton) {
     let digit = sender.currentTitle!
     if userIsInTheMiddleOfTyping {
