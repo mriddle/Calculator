@@ -5,7 +5,8 @@ class ViewController: UIViewController {
   
   @IBOutlet private weak var display: UILabel!
   @IBOutlet var calculatorButtons: [UIButton]!
-  
+  @IBOutlet weak var extraStack: UIStackView!
+
   private var userIsInTheMiddleOfTyping = false
 
   override func viewDidLoad() {
@@ -13,6 +14,14 @@ class ViewController: UIViewController {
     for calculatorButton in calculatorButtons {
       calculatorButton.layer.borderWidth = 0.25
       calculatorButton.layer.borderColor = UIColor.blackColor().CGColor
+    }
+  }
+
+  override func willAnimateRotationToInterfaceOrientation(toInterfaceOrientation: UIInterfaceOrientation, duration: NSTimeInterval) {
+    if toInterfaceOrientation.isLandscape {
+      extraStack.hidden = true
+    } else {
+      extraStack.hidden = false
     }
   }
 
